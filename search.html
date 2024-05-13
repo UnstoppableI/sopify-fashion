@@ -1,0 +1,78 @@
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>search-results</title>
+    <style>
+        .search-results{
+    width: 100%;
+    padding: 60px 0;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 10vw;
+}
+
+.heading span{
+    font-weight: 700;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-row-gap: 40px;
+}
+    </style>
+ </head>
+ <body>
+    
+     <nav class="navbar">
+        <div class="nav">
+            <img src="images/sopify.png" class="brand-logo" alt="">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand, product">
+                    <button class="search-btn">search</button>
+                </div>
+                <a href="cart.html" target="_blank"><img src="images/cart.png" alt="" width="30px"></a>
+              <a href="portfolio.html" target="_blank" ><img src="images/user.png" alt="" width="30px"></a>
+            </div>
+          </div>
+     </nav>
+     <section class="search-results">
+        <h2 class="heading">search results for <span>product</span></h2>
+    </section>
+     <footer></footer>
+     <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/cloth1.png" class="product-thumb" alt="">
+      
+                <button class="card-btn"><a href="cloth1.html">Details</a></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Myntra</h2>
+                <p class="product-short-des">Global Desi Women Blue Self Design Pure Cotton Dress</p>
+                <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/cloth2.png" class="product-thumb" alt="">
+              <button class="card-btn"><a href="cloth2.html">Details</a></button>
+              
+          </div>
+          <div class="product-info">
+              <h2 class="product-brand">Louis</h2>
+              <p class="product-short-des">Women Navy Blue Solid Layered A-Line 10 Cotton Dress</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+     <script src="js/nav.js"></script>
+     <script src="js/footer.js"></script>
+ </body>
