@@ -6,69 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sopify</title>
     <link rel="stylesheet" href="index.css">
-    <script src="js/home.js"></script>
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav">
-        <img src="images/sopify.png" class="brand-logo" alt="">
-        <div class="nav-items">
-            <div class="search">
-                <input type="text" class="search-box" placeholder="search brand, product">
-                <button class="search-btn" ><a href="search.html">Search</a></button>
-            </div>
-            <a href="cart.html" target="_blank"><img src="images/cart.png" alt="" width="30px"></a>
-          <a href="portfolio.html" target="_blank" ><img src="images/user.png" alt="" width="30px"></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img src="images/sopify.png" alt="" class="navbar-brand brand-logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Support
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Categories</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a href="cart.html" target="_blank" class="m-3 nav-link">My Cart<img src="images/cart.png" alt="" width="30px"></a>
+          </div>
         </div>
-      </div>
-  </nav>
-    
-    <ul class="links-container">
-      <li class="link-item"><a href="index.html" class="link">home</a></li>
-      <li class="link-item"><a href="#" class="link">women</a></li>
-      <li class="link-item"><a href="#" class="link">men</a></li>
-      <li class="link-item"><a href="#" class="link">kids</a></li>
-      <li class="link-item"><a href="#" class="link">accessories</a></li>
-  </ul>
-  <link rel="Javascript_Nav" href="nav.js">
-  
     </nav>
+      <ul class="links-container bg-white">
+        <li class="link-item"><a href="#" class="link">Clothes</a></li>
+        <li class="link-item"><a href="#" class="link">Makeup</a></li>
+        <li class="link-item"><a href="#" class="link">Footwear</a></li>
+        <li class="link-item"><a href="#" class="link">Bags</a></li>
+        <li class="link-item"><a href="#" class="link">Other Accessories</a></li>
+    </ul>
+
     
-    
-    <header class="hero-section">
-      <div class="content">
-          <h1 id="sopify">Sopify</h1>
-          <p class="sub-heading">best fashion collection of all time</p>
+      <div class="image-container hero-section">
+        <img src="images/clothes.png" alt="background-img">
+          <div class="text-overlay">
+            <h1 id="sopify" class="mx-5 py-3 display-4">Sopify</h1>
+            <p class="sub-heading">best fashion collection of all time</p>
+            <div class="justify-content-center d-flex">
+              <button class="bg-white border-0 btn"><h5>Let's Explore More</h5></button>
+            </div>
+          </div>
       </div>
-  </header>
-    </section>
 
     <section class="product">
-      <h2 class="product-category">best selling</h2>
+
+      <!-- Clothes Gallery Start -->
+    <div class="container container-fluid">
+      <h2 class="product-category"><a href="" class="nav-link">best selling clothes</a></h2>
+      <button class="arrow-btn pre-btn" >&#8249;</button>
       <div class="product-container">
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">50% off</span>
                 <img src="images/cloth1.png" class="product-thumb" alt="">
       
-                <button class="card-btn"><a href="cloth1.html">Details</a></button>
+                <button class="card-btn"><a class="nav-link" href="cloth1.html">Details</a></button>
             </div>
             <div class="product-info">
-                <h2 class="product-brand">Myntra</h2>
+                <h3 class="product-brand">Myntra</h3>
                 <p class="product-short-des">Global Desi Women Blue Self Design Pure Cotton Dress</p>
                 <span class="price">$20</span><span class="actual-price">$40</span>
             </div>
         </div>
+
         <div class="product-card">
           <div class="product-image">
               <span class="discount-tag">50% off</span>
               <img src="images/cloth2.png" class="product-thumb" alt="">
-              <button class="card-btn"><a href="cloth2.html">Details</a></button>
-              
+              <button class="card-btn"><a class="nav-link" href="cloth2.html">Details</a></button>
           </div>
           <div class="product-info">
-              <h2 class="product-brand">Louis</h2>
+              <h3 class="product-brand">Louis</h3>
               <p class="product-short-des">Women Navy Blue Solid Layered A-Line 10 Cotton Dress</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/cloth3.png" class="product-thumb" alt="">
+            
+            <button class="card-btn"><a class="nav-link" href="cloth3.html">Details</a></button>
+          </div>
+          <div class="product-info">
+            <h3 class="product-brand">Raymond</h3>
+            <p class="product-short-des">Here & Now Women Mauve & Black Printed</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/cloth4.png" class="product-thumb" alt="">
+              
+              <button class="card-btn"><a class="nav-link" href="cloth3.html">Details</a></button>
+          </div>
+          <div class="product-info">
+              <h3 class="product-brand">Denim</h3>
+              <p class="product-short-des">URBANIC Off-White & Black Striped A-Line Top</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+        </div>
+
+    </div>
+    <button class="arrow-btn nxt-btn" onclick="nxtBtn">&#8250;</button>
+  </div>
+</section>
+    <!-- Clothes Gallery End -->
+
+  <!-- Makeup Gallery Starttt -->
+<section class="product">
+  <div class="p-5">
+    <h2 class="product-category"><a href="" class="nav-link">Makeup Item Deals</a></h2>
+    
+    <div class="product-container">
+      <button class="arrow-btn pre-btn" >&#8249;</button>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/makeupLakme.jpeg" class="product-thumb" alt="">
+    
+              <button class="card-btn"><a class="nav-link" href="#" class="nav-link">Details</a></button>
+          </div>
+          <div class="product-info">
+              <a class="product-brand">Lakme</a>
+              <p class="product-short-des">the indians choice</p>
               <span class="price">$20</span><span class="actual-price">$40</span>
           </div>
       </div>
@@ -76,36 +160,160 @@
       <div class="product-card">
         <div class="product-image">
             <span class="discount-tag">50% off</span>
-            <img src="images/cloth3.png" class="product-thumb" alt="">
-            
-            <button class="card-btn"><a href="cloth3.html">Details</a></button>
+            <img src="images/macMakeup.jpeg" class="product-thumb" alt="">
+            <button class="card-btn"><a class="nav-link" href="#">Details</a></button>
         </div>
         <div class="product-info">
-            <h2 class="product-brand">Raymond</h2>
-            <p class="product-short-des">Here & Now Women Mauve & Black Printed</p>
+            <a class="product-brand">Mac</a>
+            <p class="product-short-des">Leading makeup brand</p>
             <span class="price">$20</span><span class="actual-price">$40</span>
         </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
           <span class="discount-tag">50% off</span>
-          <img src="images/cloth4.png" class="product-thumb" alt="">
+          <img src="images/makeupFrench.jpeg" class="product-thumb" alt="">
           
-          <button class="card-btn"><a href="cloth3.html">Details</a></button>
-      </div>
-      <div class="product-info">
-          <h2 class="product-brand">Denim</h2>
-          <p class="product-short-des">URBANIC Off-White & Black Striped A-Line Top</p>
+          <button class="card-btn"><a class="nav-link" href="#">Details</a></button>
+        </div>
+        <div class="product-info">
+          <a class="product-brand">French</a>
+          <p class="product-short-des">Leading makeup brand</p>
           <span class="price">$20</span><span class="actual-price">$40</span>
+        </div>
       </div>
+
+      <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/revlonMakeup.jpeg" class="product-thumb" alt="">
+            
+            <button class="card-btn"><a class="nav-link" href="#">Details</a></button>
+        </div>
+        <div class="product-info">
+            <a class="product-brand">Revlon</a>
+            <p class="product-short-des">Trending makeup brand</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+        </div>
+      </div>
+      <button class="arrow-btn nxt-btn" onclick="nxtBtn">&#8250;</button>
   </div>
-    </div>
-  </section>
+  </div>
+</section>
+  <!-- Makeup Enddd -->
+
+  <!-- Footwear Gallery Start -->
+<section class="product">
+  <div class="p-5">
+    <h2 class="product-category"><a href="" class="nav-link">Footwear Brands Deals</a></h2>
+    
+    <div class="product-container">
+      <button class="arrow-btn pre-btn" >&#8249;</button>
+      <div class="product-card">
+          <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/foot-action.jpeg" class="product-thumb" alt="">
+    
+              <button class="card-btn"><a class="nav-link" href="#" class="nav-link">Details</a></button>
+          </div>
+          <div class="product-info">
+              <a class="product-brand">Action</a>
+              <p class="product-short-des">the indians choice</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+          </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/foot-regal.jpeg" class="product-thumb" alt="">
+            <button class="card-btn"><a class="nav-link" href="#">Details</a></button>
+        </div>
+        <div class="product-info">
+            <a class="product-brand">Regal Shoes</a>
+            <p class="product-short-des">Best unique design</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <span class="discount-tag">50% off</span>
+          <img src="images/foot-linking.jpeg" class="product-thumb" alt="">
+          
+          <button class="card-btn"><a class="nav-link" href="#">Details</a></button>
+        </div>
+        <div class="product-info">
+          <a class="product-brand">Linking Shoes</a>
+          <p class="product-short-des">Leading dhoe brand</p>
+          <span class="price">$20</span><span class="actual-price">$40</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/foot-zouk.jpeg" class="product-thumb" alt="">
+            
+            <button class="card-btn"><a class="nav-link" href="#">Details</a></button>
+        </div>
+        <div class="product-info">
+            <a class="product-brand">Zouk</a>
+            <p class="product-short-des">Trending shoes brand</p>
+            <span class="price">$20</span><span class="actual-price">$40</span>
+        </div>
+      </div>
+      <button class="arrow-btn nxt-btn" onclick="nxtBtn">&#8250;</button>
+  </div>
+  </div>
+</section>
+<!-- Footwear Gallery End --> 
+
+<!-- Collection Start -->
+<section class="collection-container container m-5 d-flex justify-content-center">
+  <h1 class="display-5">Our Latest Collections</h1>
+  <a class="collection">
+      <img src="images/D-1i.png" alt="" class="product-image">
+      <p class="collection-title">Top <br> Designs</p>
+  </a>
+  <a class="collection">
+      <img src="images/clavia.webp" alt="">
+      <p class="collection-title">Best <br> Selling</p>
+  </a>
+  <a class="collection">
+    <img src="images/collection-madame.jpeg" alt="" class="product-image">
+    <p class="collection-title">Best <br> Selling</p>
+  </a>
+</section>
+<!-- Collection End -->
+
 
   <footer>
-    <div class="footer-content">
-      <img src="images/sopify.png" class="brand-logo-footer" alt="">
+    <div class="footer d-flex m-5 align-items-center">
+        
+
+        <div class="">
+          <div class="">
+            <img src="images/sopify.png" class="logo" alt="" width="80px">
+          </div>
+          <p class="footer-title">about company</p>
+          <p class="info">When I think of India, I think of all the technology that's built out of here: Jeff Wilke<br>Sopify is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. Sopify strives to be Earth’s most customer-centric company, Earth’s best employer, and Earth’s safest place to work.</p>
+          <p class="info">support emails - help@clothing.com, customersupport@clothing.com</p>
+          <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
+          <div class="footer-social-container">
+              <div>
+                  <a href="#" class="social-link">terms & services</a>
+                  <a href="#" class="social-link">privacy page</a>
+              </div>
+              <div>
+                  <a href="#" class="social-link">instagram</a>
+                  <a href="#" class="social-link">facebook</a>
+                  <a href="#" class="social-link">twitter</a>
+              </div>
+          </div>
+          <p class="footer-credit">Clothing, Best apparels online store</p>
+        </div>
         <div class="footer-ul-container">
             <ul class="category">
                 <li class="category-title">men</li>
@@ -135,26 +343,8 @@
             </ul>
         </div>
     </div>
+    
 </footer>
 
-<footer>
- 
-  <p class="footer-title">about company</p>
-  <p class="info">When I think of India, I think of all the technology that's built out of here: Jeff Wilke<br>Sopify is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. Sopify strives to be Earth’s most customer-centric company, Earth’s best employer, and Earth’s safest place to work.</p>
-  <p class="info">support emails - help@clothing.com, customersupport@clothing.com</p>
-  <p class="info">telephone - 180 00 00 001, 180 00 00 002</p>
-  <div class="footer-social-container">
-      <div>
-          <a href="#" class="social-link">terms & services</a>
-          <a href="#" class="social-link">privacy page</a>
-      </div>
-      <div>
-          <a href="#" class="social-link">instagram</a>
-          <a href="#" class="social-link">facebook</a>
-          <a href="#" class="social-link">twitter</a>
-      </div>
-  </div>
-  <p class="footer-credit">Clothing, Best apparels online store</p>
-</footer>
 </body>
 </html>

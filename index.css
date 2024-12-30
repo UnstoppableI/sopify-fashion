@@ -18,6 +18,14 @@ a{text-decoration: none;}
     font-family: 'roboto', sans-serif;
 }
 
+h1, h2, h3, h4, h5,h6{
+    color: #000000;
+}
+
+h1{
+    font-weight: 600;
+}
+
 .navbar{
     position: absolute;
     top: 0;
@@ -85,16 +93,39 @@ a{text-decoration: none;}
     color:wheat;
 }
 
-
-.hero-section{
+.image-container {
+    position: relative;
+    display: inline-block;
     width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+.hero-section{
+    
     height: calc(100vh - 120px);
-    background-image: url('images/clothes.png');
+    /* background-image: url('images/clothes.png'); */
+    z-index:;
     background-size: cover;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+.hero-section img{opacity: 0.5;}
 
 .hero-section .logo{
     height: 150px;
@@ -125,6 +156,26 @@ a{text-decoration: none;}
     opacity: 1;
 }
 
+.arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+.nxt-btn {
+    right: 10px;
+  }
+
+  .pre-btn {
+    left: 10px;
+  }
+
 .product{
     position: relative;
     overflow: hidden;
@@ -146,6 +197,8 @@ a{text-decoration: none;}
     width: 250px;
     height: 450px;
     margin-right: 40px;
+    color: #000000;
+    /* background-color: #a1a9cc; */
 }
 
 .product-image{
@@ -156,8 +209,9 @@ a{text-decoration: none;}
 }
 
 .product-thumb{
-    width: 100%;
+    width: auto;
     height: 350px;
+    background-color: #383838;
     object-fit: cover;
 }
 
@@ -236,6 +290,39 @@ a{text-decoration: none;}
     text-transform: capitalize;
 }
 
+.collection-container{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    /* width: 100%; */
+    /* height: 100%; */
+    /* object-fit: cover; */
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
 footer{
     position: relative;
     width: 100%;
@@ -283,7 +370,7 @@ footer{
 }
 
 .footer-link:hover{
-    color: #fff;
+    color: #002147;
 }
 
 .footer-title, .info{
